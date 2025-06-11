@@ -12,32 +12,15 @@
     rel="stylesheet" 
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
     >
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body id="top" class="dark_theme">
+<body id="top" class="light_theme">
 
     <header class="header" data-header>
         <div class="container">
             <h1 class="h1-logo">
-                <a href="#">Frances Bea<span>,</span></a>
+                <a href="#">Frances<span>,</span></a>
             </h1>
-
-            <div class="navbar-actions">
-                <select name="language" id="lang">
-                    <option value="en">EN</option>
-                    <option value="tg">TG</option>
-                </select>
-
-                <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
-                    <span class="icon"></span>
-                </button>
-            </div>
-            
-            <button class="nav-tiggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
-                <span class="one"></span>
-                <span class="two"></span>
-                <span class="three"></span>
-            </button>
 
             <nav class="navbar" data-navbar>
                 <ul class="navbar-list">
@@ -51,5 +34,81 @@
         </div>
     </header>
     
+    <main>
+        <article class="container">
+
+            <!-- HOME SECTION -->
+
+            <section class="hero" id="home">
+                <figure class="hero-banner">
+                    <picture>
+                        <source srcset="./assets/images/hero-banner.png" media="(min-width: 768px)">
+                        <source srcset="./assets/images/hero-banner-md.png" media="(min-width: 500px)">
+                        <img src="./assets/images/hero-banner-sm.png" alt="container background"
+                        class="w-100">
+                    </picture>
+                </figure>
+
+                <div class="hero-content">
+                    <h2 class="h2 hero-title">Discover New Design With Me</h2>
+                    <a href="#contact">Get in Touch.</a>
+                </div>
+
+                <ul class="hero-social-list">
+                    <li>
+                        <a href="#" class="hero-social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <div class="tooltip">Twitter</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hero-social-link">
+                            <ion-icon name="logo-linked"></ion-icon>
+                            <div class="tooltip">Linked</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="hero-social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <div class="tooltip">Facbook</div>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#about" class="scroll-down">Scroll</a>
+            </section>
+
+
+            <!-- ABOUT ME SECTION-->
+            <section class="about" id="about">
+                <figure class="about-banner">
+                    <img src="#about-banner" alt="about me banner" class="w-100">
+                </figure>
+
+                <div class="about-content section-content">
+                    <p class="section-subtitle">About Me</p>
+                    <h2 class="h3 section-title">Need a Creative Design? I might help you!</h2>
+                    <p class="section-text">
+                        Hi I'm Frances, and I'm a developer who seek passion for building graphic designs with intuitive functionalities.
+                        I somehow enjoy the process of turning ideas into reality using creative solutions.
+                    </p>
+                    
+                    <div class="btn-group">
+                        <button class="btn btn-secondary">Hire me</button>
+
+                        <button class="btn btn-primary">Download CV</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills" id="skills">
+
+            </section>
+
+        </article>
+    </main>
+
+
+
+
 </body>
 </html>
