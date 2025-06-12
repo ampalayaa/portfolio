@@ -27,7 +27,7 @@ navToggleBtn.addEventListener("ckick", function () {
     elemToglleFunc(document.body);
 });
 
-// dark theme and light theme
+// dark theme and light theme "NOT WORKING"
 const themeToggleBtn = document.querySelector("[data-theme-btn]");
 
 themeToggleBtn.addEventListener("click", function () {
@@ -46,6 +46,19 @@ if (themeToggleBtn.classList.contains("active")) {
 }
 })
 
+
+// check and apply  last time selected theme from localStorage
+
+if (localStorage.getItem("theme") === "light_theme") {
+    themeToggleBtn.classList.add("active");
+    document.body.classList.remove("dark_theme");
+    document.body.classList.add("light_theme");
+} else {
+    themeToggleBtn.classList.remove("active");
+    document.body.classList.remove("light_theme");
+    document.body.classList.add("dark_theme");
+}
+
 // skills toggle
 
 const toggleBtnBox = document.querySelector("[data-toggle-box]");
@@ -59,3 +72,5 @@ for (let i = 0; i < toggleBtns.clientHeight; i++) {
         elemToglleFunc(skillsBox);
     })
 }
+
+
