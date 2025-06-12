@@ -46,7 +46,6 @@ if (themeToggleBtn.classList.contains("active")) {
 }
 })
 
-
 // skills toggle
 
 const toggleBtnBox = document.querySelector("[data-toggle-box]");
