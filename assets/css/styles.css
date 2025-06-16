@@ -1,18 +1,4 @@
-/*-----------------------------------*\
- * style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
- * #CUSTOM PROPERTY
-\*-----------------------------------*/
+/* CUSTOM PROPERTY */
 
 :root {
 
@@ -57,9 +43,7 @@
 
   --section-padding: 80px;
 
-  /**
-   * radius
-   */
+
 
   --radius-4: 4px;
   --radius-12: 12px;
@@ -69,11 +53,7 @@
 
 
 
-
-/*-----------------------------------*\
- * #THEME COLORS
-\*-----------------------------------*/
-
+/* THEME COLOR */
 body.dark_theme {
 
   --bg-primary: hsl(0, 0%, 12%);
@@ -103,11 +83,7 @@ body.light_theme {
 
 
 
-
-/*-----------------------------------*\
- * #RESET
-\*-----------------------------------*/
-
+/* RESET */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -172,10 +148,7 @@ body.active { overflow: hidden; }
 
 
 
-/*-----------------------------------*\
- * #REUSED STYLE
-\*-----------------------------------*/
-
+/* REUSED STYLE */
 .container { padding-inline: 10px; }
 
 .h1 {
@@ -277,11 +250,7 @@ body.active { overflow: hidden; }
 
 
 
-
-/*-----------------------------------*\
- * #HEADER
-\*-----------------------------------*/
-
+/* HEADER */
 .header {
   padding-block: 15px;
   position: fixed;
@@ -456,10 +425,7 @@ body.active { overflow: hidden; }
 
 
 
-/*-----------------------------------*\
- * #HERO
-\*-----------------------------------*/
-
+/* HERO */
 main { overflow-x: hidden; }
 
 .hero {
@@ -493,10 +459,7 @@ main { overflow-x: hidden; }
 
 
 
-/*-----------------------------------*\
- * #STATS
-\*-----------------------------------*/
-
+/* STATS */
 .stats { padding-block: var(--section-padding); }
 
 .stats-list {
@@ -550,11 +513,7 @@ main { overflow-x: hidden; }
 
 
 
-
-/*-----------------------------------*\
- * #ABOUT
-\*-----------------------------------*/
-
+/* ABOUT */
 .about { padding-block: var(--section-padding); }
 
 .about-banner {
@@ -574,10 +533,8 @@ main { overflow-x: hidden; }
 
 
 
-/*-----------------------------------*\
- * #SKILLS
-\*-----------------------------------*/
 
+/* SKILLS */
 .skills { padding-block: var(--section-padding); }
 
 .skills-content { margin-bottom: 50px; }
@@ -662,11 +619,7 @@ main { overflow-x: hidden; }
 
 
 
-
-/*-----------------------------------*\
- * #PROJECT
-\*-----------------------------------*/
-
+/* PROJECT */
 .project { padding-block: var(--section-padding); }
 
 .project-list > li { margin-bottom: 25px; }
@@ -735,10 +688,7 @@ main { overflow-x: hidden; }
 
 
 
-/*-----------------------------------*\
- * #CONTACT
-\*-----------------------------------*/
-
+/* CONTACT */
 .contact { padding-block: var(--section-padding); }
 
 .contact-content { margin-bottom: 50px; }
@@ -858,10 +808,7 @@ textarea.input-field {
 
 
 
-/*-----------------------------------*\
- * #FOOTER
-\*-----------------------------------*/
-
+/* FOOTER */
 .footer {
   background: var(--bg-secondary);
   padding-block: 20px;
@@ -883,11 +830,7 @@ textarea.input-field {
 
 
 
-
-
-/*-----------------------------------*\
- * #GO TO TOP
-\*-----------------------------------*/
+/* button */
 
 .go-top {
   position: fixed;
@@ -916,22 +859,12 @@ textarea.input-field {
 
 
 
+/* MEDIA QUIERIES */
 
-
-/*-----------------------------------*\
- * #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for larger than 550px screen
- */
-
+/* responsive for larger than 550px screen */
 @media (min-width: 550px) {
 
-  /**
-   * REUSED STYLE
-   */
-
+/* For reused style */
   .container {
     max-width: 550px;
     margin-inline: auto;
@@ -939,12 +872,7 @@ textarea.input-field {
 
   .section-title { max-width: 380px; }
 
-
-
-  /**
-   * PROJECT
-   */
-
+/* project */
   .project-list {
     column-count: 2;
     column-gap: 25px;
@@ -958,33 +886,21 @@ textarea.input-field {
 
 
 
-/**
- * responsive for larger than 768px screen
- */
+/* responsive for larger than 768px screen */
+
 
 @media (min-width: 768px) {
 
-  /**
-   * REUSED STYLE
-   */
-
+/* For reused style */
   .container { max-width: 720px; }
 
   .section-title { max-width: 430px; }
 
-
-
-  /**
-   * STATS
-   */
+/* Stats */
 
   .stats-list { grid-template-columns: 1fr 1fr; }
 
-
-
-  /**
-   * ABOUT
-   */
+/* About */
 
   .btn-group {
     display: flex;
@@ -998,10 +914,7 @@ textarea.input-field {
   .about .btn-secondary { margin-bottom: 0; }
 
 
-
-  /**
-   * CONTACT
-   */
+/* contact */
 
   .contact-form {
     max-width: 450px;
@@ -1014,37 +927,18 @@ textarea.input-field {
 
 
 
-/**
- * responsive for larger than 992px screen
- */
+/* responsive for larger than 992px */
 
 @media (min-width: 992px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-
-    /**
-     * typography
-     */
-
     --fs-2: 3rem;
-
-    /**
-     * spacing
-     */
-
     --section-padding: 100px;
 
   }
 
 
-
-  /**
-   * REUSED STYLE
-   */
+/* For reused style */
 
   .container { max-width: 980px; }
 
@@ -1070,9 +964,7 @@ textarea.input-field {
 
 
 
-  /**
-   * HEADER
-   */
+/* Header */
 
   .header { padding-block: 30px; }
 
@@ -1108,11 +1000,7 @@ textarea.input-field {
 
   .navbar-link::before { height: 2px; }
 
-
-
-  /**
-   * HERO
-   */
+/* Hero */
 
   .hero {
     position: relative;
